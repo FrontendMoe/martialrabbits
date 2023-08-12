@@ -1,0 +1,385 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Segoe UI'; /* Choose a unique font name */
+  src: url('./assets/font/SegoeUI-Bold.ttf'),
+    url('./assets/font/SegoeUI-Light.ttf'),
+    url('./assets/font/SegoeUI-SemiBold.ttf'), url('./assets/font/SegoeUI.ttf');
+
+  /* Add more format declarations if you have other font file formats */
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Segoe UI', sans-serif; /* Use the same font name as defined in @font-face */
+}
+.bg-100 {
+  background-size: 100% 100%;
+}
+
+.center-text {
+  background-position: 50% 50%;
+}
+.bs-300 {
+  background-size: 275px;
+}
+.menu-design-bg {
+  background-size: 100% 100%;
+}
+
+.btn-one {
+  clip-path: polygon(
+    5.22% 0%,
+    92.61% 0%,
+    100% 49.17%,
+    93.56% 100%,
+    82.66% 100%,
+    82.43% 63.81%,
+    72.2% 64.62%,
+    72.43% 100%,
+    5.22% 100%,
+    0% 63.08%
+  );
+  transition: 0.3s;
+  position: relative;
+  /* background: linear-gradient(
+    45deg,
+    #9000e8 0%,
+    #9000e8 20%,
+    #fd78ff 50%,
+    #fd78ff 50%,
+    #9000e8 80%,
+    #9000e8 100%
+  ) !important; */
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  left: -200px;
+  width: 443px;
+  height: 100%;
+  /* background: linear-gradient(
+    45deg,
+    #9000e8 0%,
+    #9000e8 20%,
+    #fd78ff 50%,
+    #fd78ff 50%,
+    #9000e8 80%,
+    #9000e8 100%
+  ); */
+  background: linear-gradient(to right, #00d2ff, #d015ff);
+  display: block;
+  top: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+.btn-one:hover:after {
+  left: -100px;
+}
+
+.btn-two {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  left: -200px;
+  width: 443px;
+  height: 100%;
+  /* background: linear-gradient(
+    45deg,
+    #9000e8 0%,
+    #9000e8 20%,
+    #fd78ff 50%,
+    #fd78ff 50%,
+    #9000e8 80%,
+    #9000e8 100%
+  ); */
+  background: linear-gradient(to right, #00d2ff, #d015ff);
+  display: block;
+  top: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+.btn-two:hover:after {
+  left: -100px;
+}
+
+.slick-slide {
+  height: 704px;
+  box-sizing: border-box;
+}
+
+.slick-slide img {
+  height: 430px;
+  width: 100%;
+  object-fit: cover;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.bs-525 {
+  background-size: 525px;
+}
+.carousel {
+  position: relative;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel div button {
+  left: 47%;
+  top: 137%;
+}
+
+.carousel div button:first-child {
+  left: 45%;
+  top: 122%;
+}
+
+.carousel div button:last-child {
+  left: 50%;
+  top: 122%;
+}
+
+.carousel div button::before {
+  color: rgba(255, 255, 255, 0);
+  /* color: white; */
+  font-size: 40px;
+  border-radius: 0;
+}
+.slick-list {
+  overflow: visible !important;
+}
+/* CSS */
+.glass-input {
+  margin-top: 8px;
+  width: 300px;
+  height: 65px;
+  padding: 12px;
+  border-radius: 5px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.radial-gradiant-custom {
+  background: rgb(191, 121, 235);
+  background: radial-gradient(
+    circle,
+    rgba(191, 121, 235, 0.7399334733893557) 25%,
+    rgba(155, 0, 251, 0.25) 100%
+  );
+}
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transition: 0.3s;
+  /* background: radial-gradient(circle at center, transparent 25%, sandybrown 25.5%);
+  background-size: 100% 100%;
+  background-position: 50% 50%; */
+  transform: translate(-50%, -50%);
+  /* transform: translate(-50%,-50%) rotate(calc(-0.25 * 360deg));
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(hotpink 50%, pink 0);    */
+}
+.progress-bar > div {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+.circular-chart {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.circle {
+  stroke: #f80afb;
+  fill: none;
+  stroke-width: 6;
+  transition: all 0.5s ease-in-out;
+}
+
+/* .progress-bar::after {
+ 
+  content: "";
+    background: radial-gradient(ellipse at center, rgba(255,0,0,0) 0%,rgba(255,0,0,0) 50%,rgba(255,0,0,1) 40%,rgba(255,0,0,1) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 0;
+    position: absolute;
+}
+.progress-bar::before {
+ 
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: green;
+  position: absolute;
+
+} */
+a:hover {
+  @apply text-[#F80AFB];
+}
+.video-border {
+  clip-path: polygon(
+    5.85% 16.2%,
+    9.14% 12.1%,
+    87.53% 11.1%,
+    90.32% 11.1%,
+    95.96% 15.34%,
+    95.96% 82.09%,
+    90.32% 86.42%,
+    9.61% 86.29%,
+    5.85% 82.09%,
+    5.85% 99.26%
+  );
+}
+
+.footer-input {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    95.05% 70.1%,
+    100% 100%,
+    68.99% 100%,
+    0% 100%
+  );
+  border: 1px solid white;
+}
+
+.flex-imp {
+  display: flex !important;
+}
+.team:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.swiper {
+  width: 100%;
+}
+.teamCard {
+  cursor: pointer;
+}
+.teamCard .hoverEffect {
+  opacity: 0;
+
+  transition: all 0.2s ease-out;
+}
+.teamCard:hover .hoverEffect {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .md-bs-525 {
+    background-size: 380px;
+  }
+}
+@media (max-width: 768px) {
+  .progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 212px;
+    height: 217px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #tokenomics > div > div {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+  .aboutHeader h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 764px) {
+  .aboutHeader > h1 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 764px) {
+  .aboutHeader > h1 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1300px) {
+  .aboutHeader > h1 {
+    font-size: 58px;
+  }
+}
+@media (min-width: 1550px) {
+  /* Your CSS rules for screens larger than 1600px */
+  .presaleSec {
+    top: 20px !important;
+  }
+  .aboutHeader h1 {
+    font-size: 64px !important;
+  }
+}
+
+/* Extra Large Desktop */
+@media (min-width: 1920px) {
+  .presaleSec {
+    top: 50px !important;
+  }
+  .aboutHeader h1 {
+    font-size: 78px !important;
+  }
+  /* Your CSS rules for screens larger than 1920px */
+}
+@media (min-width: 2100px) {
+  .presaleSec {
+    top: 70px !important;
+  }
+  .aboutHeader h1 {
+    font-size: 87px !important;
+  }
+  /* Your CSS rules for screens larger than 1920px */
+}
+@media (min-width: 2300px) {
+  .presaleSec {
+    top: 90px !important;
+  }
+  /* Your CSS rules for screens larger than 1920px */
+}
+@media (min-width: 2500px) {
+  .presaleSec {
+    top: 120px !important;
+  }
+  .aboutHeader h1 {
+    font-size: 100px !important;
+  }
+  /* Your CSS rules for screens larger than 1920px */
+}
+@media (min-width: 2700px) {
+  .presaleSec {
+    top: 150px !important;
+  }
+  /* Your CSS rules for screens larger than 1920px */
+}
