@@ -30,7 +30,7 @@ import { Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import $ from 'jquery'
 import vid from './assets/vid.mp4'
-import x from './assets/Twitter X.png'
+import x from './assets/Twitter X.svg'
 // Import
 import topFrame from './assets/topBorder.svg'
 import bottomFrame from './assets/bottomBorder.svg'
@@ -386,10 +386,9 @@ const App = () => {
         <BsYoutube className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
         <BsInstagram className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
         <img
-          style={{ filter: 'brightness(0) invert(1)' }}
           src={x}
           alt=""
-          className="w-9 filter grayscale brightness-125"
+          className="w-6 hover:brightness-100 hover:invert-0 brightness-0 invert cursor-pointer  "
         />
       </div>
       {/* nav & her section */}
@@ -606,27 +605,29 @@ const App = () => {
         </div>
         <div className="flex pt-[300px] flex-col md:flex-row flex-wrap justify-center lg:flex-row gap-8 mt-16">
           <div className="bg-[url('./assets/img2.png')] w-[305px] h-[186px] text-white flex flex-col justify-center items-center  gap-2">
-            <h4 className="text-2xl">PRESALE 1 STAGE</h4>
+            <h4 className="text-2xl font-bold">PRESALE 1 STAGE</h4>
             <p className="text-purple-800 text-2xl">
               {' '}
               ${presaleStages[0].pricePerToken}
             </p>
-            <p className="text-xl">Price Per Token</p>
+            <p className="text-xl font-[600]">Price Per Token</p>
           </div>
           <div className="bg-[url('./assets/img3.png')] w-[305px] h-[186px] text-white flex flex-col justify-center items-center gap-2">
-            <h4 className="text-2xl">PRESALE 1 STAGE</h4>
+            <p style={{ fontWeight: '700' }} className="text-2xl font-bold">
+              PRESALE 2 STAGE
+            </p>
             <p className="text-blue-800 text-2xl">
               {' '}
               ${presaleStages[1].pricePerToken}
             </p>
-            <p className="text-xl">Price Per Token</p>
+            <p className="text-xl font-[600]">Price Per Token</p>
           </div>
           <div className="bg-[url('./assets/img4.png')] w-[310px] h-[186px] text-white flex flex-col justify-center items-center gap-2">
-            <h4 className="text-2xl">PRESALE 1 STAGE</h4>
+            <h4 className="text-2xl font-bold">PRESALE 3 STAGE</h4>
             <p className="text-pink-800 text-2xl">
               ${presaleStages[2].pricePerToken}
             </p>
-            <p className="text-xl">Price Per Token</p>
+            <p className="text-xl font-[600]">Price Per Token</p>
           </div>
         </div>
         <div className=" mt-[150px] mb-[70px] md:mb-[120px] md:mt-[300px]  md:scale-[100%] lg:scale-125 xl:scale-150">
@@ -788,7 +789,7 @@ const App = () => {
               className="max-w-sm h-[370px] w-full md:w-auto md:h-[585px]"
               alt="Card1"
             />
-            <div className="max-w-sm p-4 absolute bottom-0 bg-[#78007996] ml-2 text-white text-center">
+            <div className="max-w-sm p-4 h-[157px]  absolute bottom-0 bg-[#78007996] ml-2 text-white text-center">
               <h5 className=" text-[16px] md:text-xl font-bold">
                 Earn & Trade
               </h5>
@@ -870,13 +871,14 @@ const App = () => {
               className="max-w-sm h-[370px] w-full md:w-auto md:h-[585px]"
               alt="Card3"
             />
-            <div className="max-w-sm p-4 absolute bottom-0 bg-[#78007996] ml-2 text-white text-center">
+            <div className="max-w-sm p-4 h-[157px] absolute bottom-0 bg-[#78007996] ml-2 text-white text-center">
               <h5 className="text-[16px] md:text-xl font-bold">
                 Connect & Create
               </h5>
-              <p className="text-[12px] md:text-sm"></p>Earn $MR tokens and
-              NFTs, as well as other in-game assets, by engaging in diverse game
-              modes, and trade with them within the in-game MR Marketplace.
+              <p className="text-[12px] md:text-sm"></p>Use the game
+              communication options to forge alliances with fellow Martial
+              Rabbits and collaborate to master the diverse Game Modes. Create
+              an entirely new world within the game.
             </div>
           </div>
         </div>
@@ -1010,7 +1012,7 @@ const App = () => {
         className="text-white  z-0  aboutHeader relative bg-[#07071C] w-full py-[150px] flex flex-col items-center justify-center"
       >
         <h1 className="text-3xl relative z-10 md:text-5xl font-bold text-center">
-          Road <span className="text-[#00D2FF]">map</span>
+          Road<span className="text-[#00D2FF]">map</span>
         </h1>
         <div className="flex relative  z-10 justify-center lg:flex-row md:max-w-[817px] flex-wrap md:flex-nowrap mt-10 gap-8">
           <div className=" relative w-fit bg-100 bg-no-repeat  h-fit text-white flex flex-col justify-center items-center gap-2">
@@ -1090,7 +1092,7 @@ const App = () => {
                     currentMilestone === index
                       ? "bg-[url('./assets/img20.png')]"
                       : "bg-[url('./assets/img21.png')]"
-                  } lg:ml-[150px]  bg-no-repeat menu-design-bg relative  cursor-pointer  w-[360px] m-auto min-h-[370px]  text-white p-4 md:p-8`}
+                  } lg:ml-[150px]  bg-no-repeat menu-design-bg relative    w-[360px] m-auto min-h-[370px]  text-white p-4 md:p-8`}
                 >
                   {}{' '}
                   <h4 className="text-[#D8A4F9] font-bold text-2xl text-center">
@@ -1132,13 +1134,13 @@ const App = () => {
           <p className="h-1 w-3/4 bg-[#F80AFB] rounded-full"> </p>
           <button
             onClick={() => $('#roadmap .swiper-button-prev').click()}
-            className="border hover:bg-[#9B00FB] transition border-[#F80AFB] p-2"
+            className="border hover:bg-[#F80AFB] transition border-[#F80AFB] p-2"
           >
             <AiOutlineLeft />
           </button>
           <button
             onClick={() => $('#roadmap .swiper-button-next').click()}
-            className="border hover:bg-[#9B00FB] transition border-[#F80AFB] p-2"
+            className="border hover:bg-[#F80AFB] transition border-[#F80AFB] p-2"
           >
             <AiOutlineRight />
           </button>
@@ -1187,8 +1189,8 @@ const App = () => {
                 </div>
               ))}
             </div>
-            <div className="text-3xl text-white text-center font-bold">
-              <h1>AND MORE THAN</h1>
+            <div className="text-3xl font-bold text-white text-center font-bold">
+              <p>AND MORE THAN</p>
               <p className="text-[#FF4581]">10+ SPECIALISTS</p>
             </div>
           </div>
@@ -1306,11 +1308,10 @@ const App = () => {
               <BsYoutube className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
               <BsInstagram className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
               <img
-                style={{ filter: 'brightness(0) invert(1)' }}
                 src={x}
                 alt=""
-                className="w-9 filter grayscale brightness-125"
-              />{' '}
+                className="w-6 hover:brightness-100 hover:invert-0 brightness-0 invert cursor-pointer  "
+              />
             </div>
           </footer>
           <p className="h-1 w-full bg-[#F80AFB] mx-auto my-10" />
@@ -1320,16 +1321,16 @@ const App = () => {
             </p>
             <ul className="text-xs font-medium flex flex-wrap md:flex-nowrap gap-4">
               <li>
-                <Link>Litepaper</Link>
+                <Link className="cursor-pointer">Litepaper</Link>
               </li>
               <li>
-                <Link>Legal Disclaimer</Link>
+                <Link className="cursor-pointer">Legal Disclaimer</Link>
               </li>
               <li>
-                <Link>Privacy & Policy</Link>
+                <Link className="cursor-pointer">Privacy & Policy</Link>
               </li>
               <li>
-                <Link>Token Holder Agreement</Link>
+                <Link className="cursor-pointer">Token Holder Agreement</Link>
               </li>
             </ul>
           </footer>

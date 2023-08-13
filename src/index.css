@@ -1,16 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-  font-family: 'Segoe UI'; /* Choose a unique font name */
-  src: url('./assets/font/SegoeUI-Bold.ttf'),
-    url('./assets/font/SegoeUI-Light.ttf'),
-    url('./assets/font/SegoeUI-SemiBold.ttf'), url('./assets/font/SegoeUI.ttf');
 
-  /* Add more format declarations if you have other font file formats */
-  font-weight: normal;
-  font-style: normal;
-}
 body {
 }
 .bg-100 {
@@ -385,4 +376,8 @@ a:hover {
 
 .aboutHeader h1 {
   line-height: 133.333%;
+}
+
+.font-bold {
+  font-weight: 700 !important;
 }
