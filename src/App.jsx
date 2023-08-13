@@ -664,7 +664,7 @@ const App = () => {
         <div>
           <div className="  bg-cover  w-full h-fit bg-repeat-round relative">
             <div className="absolute top-[50px] xs:top-[100px] md:top-[150px]  left-[50%] -translate-x-[50%] -translate-y-[10%] z-50 h-[180px] menu-design-bg w-[80%] lg:w-[60%] max-w-[650px] md:h-[173px]">
-              <p className="text-sm md:text-base p-4 md:p-10 absolute top-1/2 w-full left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <p className="text-sm md:text-base w-full border p-4 md:p-10 absolute top-1/2 h-full left-1/2 -translate-x-1/2 -translate-y-1/2">
                 Martial Rabbits is transforming the Metaverse with our
                 revolutionary product. We provide a unique blend of free-to-play
                 and play & earn experiences, including PVP battles, seasonal
@@ -792,34 +792,37 @@ const App = () => {
               <h5 className=" text-[16px] md:text-xl font-bold">
                 Earn & Trade
               </h5>
-              <p className="text-[12px] md:text-sm"></p>Earn $MR tokens and
-              NFTs, as well as other in-game assets, by engaging in diverse game
-              modes, and trade with them within the in-game MR Marketplace.
+              <p className="text-[12px] leading-4  md:text-[14px]"></p>Earn $MR
+              tokens and NFTs, as well as other in-game assets, by engaging in
+              diverse game modes, and trade with them within the in-game MR
+              Marketplace.
             </div>
           </div>
           <div className="relative w-[396.246px] ">
             <img
               src={Card2}
-              className="  w-full md:w-[396.246px]"
+              className="  w-full h-full md:w-[396.246px]"
               alt="Card2"
             />
-            <div className=" absolute bottom-0  mr-5 text-white text-center">
+            <div className=" absolute bottom-0 h-[150px]  mr-5 text-white text-center">
               <div className="relative z-10 p-4 ">
                 <h5 className="text-[16px] md:text-xl font-bold">
-                  Earn & Trade
+                  Play & Conquer
                 </h5>
-                <p className="text-[12px] md:text-sm">
-                  Earn $MR tokens and NFTs, as well as other in-game assets, by
-                  engaging in diverse game modes, and trade with them within the
-                  in-game MR Marketplace.
+                <p className="text-[12px] leading-4  md:text-[14px]">
+                  Immerse yourself in Single or Multiplayer Modes on your own,
+                  against others or team-up with your friends. Complete various
+                  Quests in both Modes. Participate in massive PVP battles
+                  including Battle Royal, Deathmatches, Seasonal Events, Clan
+                  Battles and more.
                 </p>
               </div>
-              <div className="absolute bottom-0 left-0">
+              <div className="absolute -space-y-[1.73px] bottom-0 left-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="381"
-                  height="161"
-                  viewBox="0 0 381 161"
+                  width="375"
+                  height="157"
+                  viewBox="0 0 381 157"
                   fill="none"
                 >
                   <g filter="url(#filter0_b_144_69)">
@@ -868,7 +871,9 @@ const App = () => {
               alt="Card3"
             />
             <div className="max-w-sm p-4 absolute bottom-0 bg-[#78007996] ml-2 text-white text-center">
-              <h5 className="text-[16px] md:text-xl font-bold">Earn & Trade</h5>
+              <h5 className="text-[16px] md:text-xl font-bold">
+                Connect & Create
+              </h5>
               <p className="text-[12px] md:text-sm"></p>Earn $MR tokens and
               NFTs, as well as other in-game assets, by engaging in diverse game
               modes, and trade with them within the in-game MR Marketplace.
@@ -926,55 +931,55 @@ const App = () => {
                   </div>
                 </div>
                 <div
-                  className="absolute cursor-pointer md:text-[26px] text-[14px] top-[0%] left-[-21%] md:left-[10%] flex gap-1"
+                  className="absolute cursor-pointer md:text-[26px] text-[14px] top-[0%] left-[-24%] md:left-[8%] flex gap-1"
                   onMouseEnter={() => handleHover(13)}
                 >
                   Team <p className="text-[#F80AFB]">13%</p>
                 </div>
                 <div
-                  className="absolute md:text-[26px] text-[14px] top-[20%] md:-left-[6%] -left-[44%] flex gap-1 "
+                  className="absolute md:text-[26px] text-[14px] top-[20%] md:-left-[8%] -left-[48%] flex gap-1 "
                   onMouseEnter={() => handleHover(4)}
                 >
                   Advisors <p className="text-[#F80AFB]">4%</p>
                 </div>
                 <div
-                  className="absolute top-[40%] md:text-[26px] text-[14px] -left-[60%] md:-left-[15%] flex gap-1"
+                  className="absolute top-[40%] md:text-[26px] text-[14px] -left-[70%] md:-left-[20%] flex gap-1"
                   onMouseEnter={() => handleHover(9)}
                 >
                   Marketing <p className="text-[#F80AFB]">9%</p>
                 </div>
                 <div
-                  className="absolute top-[60%] md:text-[26px] text-[14px] -left-[60%] md:-left-[17%] flex gap-1"
+                  className="absolute top-[60%] md:text-[26px] text-[14px] -left-[70%] md:-left-[21%] flex gap-1"
                   onMouseEnter={() => handleHover(7)}
                 >
                   Development <p className="text-[#F80AFB]">7%</p>
                 </div>
                 <div
-                  className="absolute top-[80%] md:text-[26px] text-[14px] -left-[42%] md:-left-[8%] flex gap-1"
+                  className="absolute top-[80%] md:text-[26px] text-[14px] -left-[45%] md:-left-[12%] flex gap-1"
                   onMouseEnter={() => handleHover(6)}
                 >
                   Growth Fund <p className="text-[#F80AFB]">6%</p>
                 </div>
                 <div
-                  className="absolute top-[0%] md:text-[26px] text-[14px] right-[-19%] md:right-[13%] flex gap-1"
+                  className="absolute top-[0%] md:text-[26px] text-[14px] right-[-17%] md:right-[8%] flex gap-1"
                   onMouseEnter={() => handleHover(6)}
                 >
                   <p className="text-[#F80AFB]">6%</p>Seed
                 </div>
                 <div
-                  className="absolute top-[20%] md:text-[26px] text-[14px] -right-[45%] md:-right-[5%] flex gap-1"
+                  className="absolute top-[20%] md:text-[26px] text-[14px] -right-[35%] md:-right-[10%] flex gap-1"
                   onMouseEnter={() => handleHover(16)}
                 >
                   <p className="text-[#F80AFB]">16%</p>Pre Sale
                 </div>
                 <div
-                  className="absolute top-[40%] md:text-[26px] text-[14px] -right-[53%] md:-right-[12%] flex gap-1"
+                  className="absolute top-[40%] md:text-[26px] text-[14px] -right-[53%] md:-right-[17%] flex gap-1"
                   onMouseEnter={() => handleHover(2)}
                 >
                   <p className="text-[#F80AFB]">2%</p>Public Sale
                 </div>
                 <div
-                  className="absolute top-[60%] md:text-[26px] text-[14px] -right-[58%] md:-right-[6%] flex gap-1"
+                  className="absolute top-[60%] md:text-[26px] text-[14px] -right-[58%] md:-right-[12%] flex gap-1"
                   onMouseEnter={() => handleHover(90)}
                 >
                   <p className="text-[#F80AFB]">7%</p>Liquidity

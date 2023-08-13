@@ -12,7 +12,6 @@
   font-style: normal;
 }
 body {
-  font-family: 'Segoe UI', sans-serif; /* Use the same font name as defined in @font-face */
 }
 .bg-100 {
   background-size: 100% 100%;
@@ -315,22 +314,22 @@ a:hover {
     transform-origin: center;
   }
   .aboutHeader h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media (min-width: 764px) {
   .aboutHeader > h1 {
-    font-size: 48px;
+    font-size: 45px;
   }
 }
 @media (min-width: 764px) {
   .aboutHeader > h1 {
-    font-size: 48px;
+    font-size: 46px;
   }
 }
 @media (min-width: 1300px) {
   .aboutHeader > h1 {
-    font-size: 58px;
+    font-size: 54px;
   }
 }
 @media (min-width: 1550px) {
@@ -339,7 +338,7 @@ a:hover {
     top: 20px !important;
   }
   .aboutHeader h1 {
-    font-size: 64px !important;
+    font-size: 59px !important;
   }
 }
 
@@ -349,7 +348,7 @@ a:hover {
     top: 50px !important;
   }
   .aboutHeader h1 {
-    font-size: 78px !important;
+    font-size: 72px !important;
   }
   /* Your CSS rules for screens larger than 1920px */
 }
@@ -358,7 +357,7 @@ a:hover {
     top: 70px !important;
   }
   .aboutHeader h1 {
-    font-size: 87px !important;
+    font-size: 75px !important;
   }
   /* Your CSS rules for screens larger than 1920px */
 }
@@ -373,7 +372,7 @@ a:hover {
     top: 120px !important;
   }
   .aboutHeader h1 {
-    font-size: 100px !important;
+    font-size: 90px !important;
   }
   /* Your CSS rules for screens larger than 1920px */
 }
@@ -382,4 +381,8 @@ a:hover {
     top: 150px !important;
   }
   /* Your CSS rules for screens larger than 1920px */
+}
+
+.aboutHeader h1 {
+  line-height: 133.333%;
 }
