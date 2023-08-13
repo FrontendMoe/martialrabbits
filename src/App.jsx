@@ -30,6 +30,7 @@ import { Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import $ from 'jquery'
 import vid from './assets/vid.mp4'
+import x from './assets/Twitter X.png'
 // Import
 import topFrame from './assets/topBorder.svg'
 import bottomFrame from './assets/bottomBorder.svg'
@@ -384,7 +385,12 @@ const App = () => {
       <div className="fixed top-[30%] z-[100000] border transition border-l-0 hover:bg-[#00D1FF0F] border-white bg-[#00d0ff2b] w-16 h-36 flex flex-col items-center justify-center gap-4">
         <BsYoutube className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
         <BsInstagram className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
-        <FiTwitter className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
+        <img
+          style={{ filter: 'brightness(0) invert(1)' }}
+          src={x}
+          alt=""
+          className="w-9 filter grayscale brightness-125"
+        />
       </div>
       {/* nav & her section */}
       <section className="bg-[url('./assets/bg.png')] w-full min-h-[1300px] bg-no-repeat bg-cover bg-center absolute z-[1000]">
@@ -399,7 +405,7 @@ const App = () => {
           <nav className="flex justify-end lg:justify-center gap-20 items-end w-[70%]">
             <div className="text-white">
               <ul className="hidden lg:flex justify-center gap-8 text-lg font-bold">
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <Link
                     to="presale"
                     smooth={true}
@@ -410,7 +416,7 @@ const App = () => {
                     Presale
                   </Link>
                 </li>
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <Link
                     to="about"
                     smooth={true}
@@ -421,7 +427,7 @@ const App = () => {
                     About Us
                   </Link>
                 </li>
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <Link
                     to="tokenomics"
                     smooth={true}
@@ -432,7 +438,7 @@ const App = () => {
                     Tokenomics
                   </Link>
                 </li>
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <Link
                     to="roadmap"
                     smooth={true}
@@ -443,7 +449,7 @@ const App = () => {
                     Roadmap
                   </Link>
                 </li>
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <Link
                     to="team"
                     smooth={true}
@@ -454,7 +460,7 @@ const App = () => {
                     Team
                   </Link>
                 </li>
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   Litepaper
                 </li>
               </ul>
@@ -628,7 +634,7 @@ const App = () => {
             <video
               src={vid}
               id="video"
-              className="video-border video relative z-10 w-full h-full scale-105 "
+              className="video-border video relative z-10 w-full h-[107%] scale-x-105 "
             ></video>
             <div
               className="absolute z-10"
@@ -1229,7 +1235,7 @@ const App = () => {
             </div>
             <div className="text-white relative z-10">
               <ul className="hidden lg:flex gap-8 text-lg font-bold">
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <div
                     to="presale"
                     smooth={true}
@@ -1241,7 +1247,7 @@ const App = () => {
                     Presale
                   </div>
                 </li>
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <div
                     to="about"
                     onClick={() => focusOnSection('about')}
@@ -1253,7 +1259,7 @@ const App = () => {
                     About Us
                   </div>
                 </li>
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <div
                     to="tokenomics"
                     smooth={true}
@@ -1265,7 +1271,7 @@ const App = () => {
                     Tokenomics
                   </div>
                 </li>
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <div
                     to="roadmap"
                     smooth={true}
@@ -1277,7 +1283,7 @@ const App = () => {
                     Roadmap
                   </div>
                 </li>
-                <li className="hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer">
+                <li className="hover:text-[#F80AFB]  duration-200 cursor-pointer">
                   <div
                     to="team"
                     smooth={true}
@@ -1294,7 +1300,12 @@ const App = () => {
             <div className="flex gap-4">
               <BsYoutube className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
               <BsInstagram className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
-              <FiTwitter className="text-2xl text-white hover:text-[#F80AFB] hover:scale-105 duration-200 cursor-pointer" />
+              <img
+                style={{ filter: 'brightness(0) invert(1)' }}
+                src={x}
+                alt=""
+                className="w-9 filter grayscale brightness-125"
+              />{' '}
             </div>
           </footer>
           <p className="h-1 w-full bg-[#F80AFB] mx-auto my-10" />
