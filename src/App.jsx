@@ -16,7 +16,7 @@ import ReactLoading from 'react-loading'
 import RoadmapLogo1 from './assets/img15.png'
 import RoadmapLogo2 from './assets/Marketing.png'
 import RoadmapLogo3 from './assets/img17.png'
-import FooterPerson from './assets/img22.png'
+import FooterPerson from './assets/rubbit.png'
 import Slider from 'react-slick'
 import Lightbox from 'react-image-lightbox'
 import 'slick-carousel/slick/slick.css'
@@ -1216,13 +1216,14 @@ const App = () => {
                 className="glass-input footer-input"
               />
               <div>
-                <button className="w-60 h-16 text-white text-center flex justify-center mt-2 btn-one  text-black text-base tracking-widest font-semibold   items-center cursor-pointer">
+                <button className="w-60 h-16 relative z-0 btn-one text-white text-center flex justify-center mt-2 btn-one  text-black text-base tracking-widest font-semibold   items-center cursor-pointer">
                   Subscribe
                 </button>
+
                 <img
                   src={FooterPerson}
                   alt="footer person"
-                  className="hidden md:block max-w-full translate-x-[5%] -translate-y-[79%]"
+                  className="hidden md:block w-fit  FooterPerson   max-w-full translate-x-[40%] -translate-y-[79%]"
                 />
               </div>
             </div>
