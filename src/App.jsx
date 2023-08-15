@@ -532,10 +532,8 @@ const App = () => {
           </nav>
         </div>
         {/* hero section */}
-        <section className="flex flex-col justify-center items-center pt-20 md:pt-32">
-          <h1 className="md:text-5xl text-3xl text-white font-bold">
-            Token Pre-Sale Start Soon
-          </h1>
+        <section className="flex aboutHeader flex-col justify-center items-center pt-20 md:pt-32">
+          <h1 className=" text-white font-bold">Token Pre-Sale Start Soon</h1>
           <p className="md:text-xl text-lg text-white text-center max-w-lg py-10 leading-8">
             Embrace the power of Martial Rabbits, a pioneering Metaverse
             experience that offers a unique blend of combat, adventure, and
@@ -949,61 +947,61 @@ const App = () => {
                   </div>
                 </div>
                 <div
-                  className="absolute cursor-pointer md:text-[26px] text-[14px] top-[0%] left-[-24%] md:left-[8%] flex gap-1"
+                  className="absolute cursor-pointer md:text-[26px] text-[14px] top-[0%] left-[-24%] md:left-[2%] flex gap-1"
                   onMouseEnter={() => handleHover(13)}
                 >
                   Team <p className="text-[#F80AFB]">13%</p>
                 </div>
                 <div
-                  className="absolute md:text-[26px] text-[14px] top-[20%] md:-left-[8%] -left-[48%] flex gap-1 "
+                  className="absolute md:text-[26px] text-[14px] top-[20%] md:-left-[14%] -left-[48%] flex gap-1 "
                   onMouseEnter={() => handleHover(4)}
                 >
                   Advisors <p className="text-[#F80AFB]">4%</p>
                 </div>
                 <div
-                  className="absolute top-[40%] md:text-[26px] text-[14px] -left-[70%] md:-left-[20%] flex gap-1"
+                  className="absolute top-[40%] md:text-[26px] text-[14px] -left-[70%] md:-left-[24%] flex gap-1"
                   onMouseEnter={() => handleHover(9)}
                 >
                   Marketing <p className="text-[#F80AFB]">9%</p>
                 </div>
                 <div
-                  className="absolute top-[60%] md:text-[26px] text-[14px] -left-[70%] md:-left-[21%] flex gap-1"
+                  className="absolute top-[60%] md:text-[26px] text-[14px] -left-[70%] md:-left-[26%] flex gap-1"
                   onMouseEnter={() => handleHover(7)}
                 >
                   Development <p className="text-[#F80AFB]">7%</p>
                 </div>
                 <div
-                  className="absolute top-[80%] md:text-[26px] text-[14px] -left-[45%] md:-left-[12%] flex gap-1"
+                  className="absolute top-[80%] md:text-[26px] text-[14px] -left-[45%] md:-left-[17%] flex gap-1"
                   onMouseEnter={() => handleHover(6)}
                 >
                   Growth Fund <p className="text-[#F80AFB]">6%</p>
                 </div>
                 <div
-                  className="absolute top-[0%] md:text-[26px] text-[14px] right-[-17%] md:right-[8%] flex gap-1"
+                  className="absolute top-[0%] md:text-[26px] text-[14px] right-[-17%] md:right-[2%] flex gap-1"
                   onMouseEnter={() => handleHover(6)}
                 >
                   <p className="text-[#F80AFB]">6%</p>Seed
                 </div>
                 <div
-                  className="absolute top-[20%] md:text-[26px] text-[14px] -right-[35%] md:-right-[10%] flex gap-1"
+                  className="absolute top-[20%] md:text-[26px] text-[14px] -right-[35%] md:-right-[16%] flex gap-1"
                   onMouseEnter={() => handleHover(16)}
                 >
                   <p className="text-[#F80AFB]">16%</p>Pre Sale
                 </div>
                 <div
-                  className="absolute top-[40%] md:text-[26px] text-[14px] -right-[53%] md:-right-[17%] flex gap-1"
+                  className="absolute top-[40%] md:text-[26px] text-[14px] -right-[53%] md:-right-[22%] flex gap-1"
                   onMouseEnter={() => handleHover(2)}
                 >
                   <p className="text-[#F80AFB]">2%</p>Public Sale
                 </div>
                 <div
-                  className="absolute top-[60%] md:text-[26px] text-[14px] -right-[58%] md:-right-[12%] flex gap-1"
+                  className="absolute top-[60%] md:text-[26px] text-[14px] -right-[58%] md:-right-[20%] flex gap-1"
                   onMouseEnter={() => handleHover(7)}
                 >
                   <p className="text-[#F80AFB]">7%</p>Liquidity
                 </div>
                 <div
-                  className="absolute top-[80%] md:text-[26px] text-[14px] -right-[36%] md:-right-[0%] flex gap-1"
+                  className="absolute top-[80%] md:text-[26px] text-[14px] -right-[36%] md:-right-[8%] flex gap-1"
                   onMouseEnter={() => handleHover(30)}
                 >
                   <p className="text-[#F80AFB]">30%</p>Rewards
