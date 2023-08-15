@@ -4,14 +4,12 @@ import videoRec from './assets/img5.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCross2 } from 'react-icons/rx'
 import { BsInstagram, BsYoutube } from 'react-icons/bs'
-import { FaYoutube, FaDownload } from 'react-icons/fa'
-import { AiOutlineYoutube, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
-import { FiTwitter } from 'react-icons/fi'
+import { FaDownload } from 'react-icons/fa'
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import Logo from './assets/Logo.png'
 import Card1 from './assets/img12.png'
 import Card2 from './assets/playConquer.png'
 import Card3 from './assets/img14.png'
-import HoverImg from './assets/img14.png'
 import ReactLoading from 'react-loading'
 import RoadmapLogo1 from './assets/img15.png'
 import RoadmapLogo2 from './assets/Marketing.png'
@@ -32,13 +30,10 @@ import $ from 'jquery'
 import vid from './assets/vid.mp4'
 import x from './assets/Twitter X.svg'
 // Import
-import topFrame from './assets/topBorder.svg'
-import bottomFrame from './assets/bottomBorder.svg'
-import cyberBar from './assets/CyberBar.png'
+
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
-import ImagesViewer from './components/ImagesViewer'
 import { Marketing, hoverTeamBox, teamBox } from './assets/icons'
 // Team Images
 import Sako from './assets/Sako.png'
@@ -46,7 +41,6 @@ import Grano from './assets/Grano.png'
 import Marko from './assets/Marko.png'
 import Andre from './assets/Andre.png'
 
-import teamBg from './assets/teamBg.png'
 import { focusOnSection, scrollToTop } from './functions/functions'
 const presaleStages = [
   {
@@ -82,11 +76,12 @@ const App = () => {
     presaleStages[0].pricePerToken,
   )
   const [mobileNav, setMobileNav] = useState(false)
-  const [rangeVal, setRangeVal] = useState(0)
+  // const [rangeVal, setRangeVal] = useState(0)
   const [maxTokens, setMaxTokens] = useState(presaleStages[0].maxTokens)
   const [soldTokens, setSoldTokens] = useState(0)
   const [usdtRaised, setUsdtRaised] = useState(0)
   const [connected, setConnected] = useState(false)
+  // eslint-disable-next-line
   const [roadmap, setRoadMap] = useState([
     {
       name: 'Milestone 1 - Q3 2023',
@@ -244,6 +239,7 @@ const App = () => {
     },
   ])
   const [sliding, setSliding] = useState(false)
+  // eslint-disable-next-line
   const [currentMilestone, setMilestone] = useState(0)
   const team = [
     {
@@ -289,6 +285,7 @@ const App = () => {
     } else {
       setCurrentStage(1)
     }
+    // eslint-disable-next-line
   }, [soldTokens])
   useEffect(() => {
     if (currentStage <= 3 || currentStage > 0) {
@@ -299,6 +296,7 @@ const App = () => {
       setMaxTokens(presaleStages[currentStage - 1]?.maxTokens)
     }
   }, [currentStage])
+  // eslint-disable-next-line
   const [images, setImages] = useState(photos)
   const [current, setCurrent] = useState()
   const slideRef = useRef(null)
@@ -354,18 +352,7 @@ const App = () => {
   const handleNext = () => {
     slideRef.current.slickNext()
   }
-  function playVideo() {
-    const videoIframe = document.getElementById('video')
-    if (videoIframe) {
-      const player = new window.YT.Player(videoIframe, {
-        events: {
-          onReady: (event) => {
-            event.target.playVideo()
-          },
-        },
-      })
-    }
-  }
+
   const handlePlayVideo = () => {
     const video = document.getElementById('video')
 
