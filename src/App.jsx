@@ -652,7 +652,7 @@ const App = () => {
         <div>
           <div className="  bg-cover  w-full h-fit bg-repeat-round relative">
             <div className="absolute top-[50px] xs:top-[100px] md:top-[150px]  left-[50%] -translate-x-[50%] -translate-y-[10%] z-50 h-[180px] menu-design-bg w-[80%] lg:w-[60%] max-w-[650px] md:h-[173px]">
-              <p className="text-sm md:text-base w-full border p-4 md:p-10 absolute top-1/2 h-full left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <p className="text-sm md:text-base  flex justify-center items-center pl-1 w-[90%] absolute top-1/2 h-full left-1/2 -translate-x-1/2 -translate-y-1/2">
                 Martial Rabbits is transforming the Metaverse with our
                 revolutionary product. We provide a unique blend of free-to-play
                 and play & earn experiences, including PVP battles, seasonal
