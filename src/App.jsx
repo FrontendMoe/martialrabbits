@@ -237,6 +237,35 @@ const App = () => {
         },
       ],
     },
+    {
+      name: 'Milestone 7 - Q1 2025',
+      features: [
+        {
+          name: 'Full Game Release',
+          type: 'dev',
+        },
+        {
+          name: 'Scaling Reward System',
+          type: 'dev',
+        },
+        {
+          name: 'Game Update',
+          type: 'dev',
+        },
+        {
+          name: 'Tournaments',
+          type: 'dev',
+        },
+        {
+          name: 'Continuous Development',
+          type: 'dev',
+        },
+        {
+          name: 'Full Game Release',
+          type: 'dev',
+        },
+      ],
+    },
   ])
   const [sliding, setSliding] = useState(false)
   // eslint-disable-next-line
@@ -665,7 +694,7 @@ const App = () => {
               <img
                 src={aboutImage}
                 alt=""
-                className=" w-full object-cover h-[1059px] relative z-10"
+                className=" w-full object-cover h-full relative z-10"
               />
             </div>
             <div
@@ -740,13 +769,13 @@ const App = () => {
         <div className="flex items-center w-3/4 gap-2 relative z-10">
           <p className="h-1 w-3/4 bg-[#F80AFB] rounded-full"> </p>
           <button
-            className="border hover:bg-[#9B00FB] transition border-[#F80AFB] p-2"
+            className="border hover:bg-[#F80AFB] transition border-[#F80AFB] p-2"
             onClick={() => handlePrev()}
           >
             <AiOutlineLeft />
           </button>
           <button
-            className="border hover:bg-[#9B00FB] transition border-[#F80AFB] p-2"
+            className="border hover:bg-[#F80AFB] transition border-[#F80AFB] p-2"
             onClick={() => handleNext()}
           >
             <AiOutlineRight />
@@ -969,7 +998,7 @@ const App = () => {
                 </div>
                 <div
                   className="absolute top-[60%] md:text-[26px] text-[14px] -right-[58%] md:-right-[12%] flex gap-1"
-                  onMouseEnter={() => handleHover(90)}
+                  onMouseEnter={() => handleHover(7)}
                 >
                   <p className="text-[#F80AFB]">7%</p>Liquidity
                 </div>
