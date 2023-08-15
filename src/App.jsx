@@ -947,7 +947,7 @@ const App = () => {
                   </div>
                 </div>
                 <div
-                  className="absolute cursor-pointer md:text-[26px] text-[14px] top-[0%] left-[-24%] md:left-[2%] flex gap-1"
+                  className="absolute  md:text-[26px] text-[14px] top-[0%] left-[-24%] md:left-[2%] flex gap-1"
                   onMouseEnter={() => handleHover(13)}
                 >
                   Team <p className="text-[#F80AFB]">13%</p>
